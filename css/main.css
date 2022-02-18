@@ -549,6 +549,11 @@ nav.navbar{
     .row.Footer{
         height: 43px!important;
     }
+
+    .nav-item button{
+        height: 43px;
+        line-height: 27px;
+    }
 }
 
 html,body{ /*-- Sorry for this bad practice :(
