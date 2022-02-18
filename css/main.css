@@ -160,6 +160,11 @@ html, body{
 
 }
 
+nav.outside .nav-tabs .nav-item:not(:last-child) button{
+    border-right-color: white!important;
+    border-left-color: white!important;
+}
+
 .nav-item button.active{
     background-color: #21252a !important;
     color:white!important;
@@ -553,6 +558,7 @@ nav.navbar{
     .nav-item button{
         height: 43px;
         line-height: 27px;
+
     }
 }
 
