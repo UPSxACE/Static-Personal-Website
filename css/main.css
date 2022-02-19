@@ -831,3 +831,42 @@ body{
     }
 
 }
+
+
+
+
+/* ----------------------------------------------CONTACT ME---------------------------------------------------------- */
+
+.tab-pane#contact, .contentContact{
+    height: 100%;
+
+}
+
+.contentContact .row.row1{
+    background-color: red;
+    height: 100%;
+    justify-content: center;
+    text-align: left;
+    align-items: center;
+
+
+}
+
+.contentContact .col-12.outsideColumn{
+    display: flex;
+    background-color: saddlebrown;
+    justify-content: center;
+    height: 100%;/*                         ALTERAR MAIS TARDE*/
+
+
+}
+
+.contentContact article{
+    display: flex;
+    width: 100%; /*                  ALTERAR MAIS TARDE */
+    background-color: bisque;
+    align-items: start;
+    justify-content: left;
+
+
+}
