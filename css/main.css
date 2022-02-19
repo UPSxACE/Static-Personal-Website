@@ -641,18 +641,18 @@ body{
     display: flex;
     flex-direction: column;
     border: 1px solid #21252a;
-    width: 27.33333333%;
+    width: 31.33333333%;
     text-align: center;
     padding-top: 40px;
     padding-bottom: 40px;
-    font-size: 20px;
 }
 
 .square:not(:last-child){
-    margin-right: 9%;
+    margin-right: 3%;
 }
 .square i{
     margin-bottom: 5px;
+    font-size: 24px;
 }
 
 @media (max-width: 767px) {
