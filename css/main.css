@@ -155,20 +155,24 @@ html, body{
     color: white!important;
     font-weight: 500!important;
     border-radius:0!important;
-
+    border-left-color: white!important;
     /*border: 1px solid rgba(0,0,0,0.2);*/
 
 }
 
 nav.outside .nav-tabs .nav-item:not(:last-child) button{
     border-right-color: white!important;
-    border-left-color: white!important;
+
 }
 
 .nav-item button.active{
     background-color: #21252a !important;
     color:white!important;
     border-radius:0;
+}
+
+nav.outside .nav-item:last-child button.active{
+    border-right-color: #21252a !important;
 }
 
 div.socialMediaIcons.test{
@@ -307,7 +311,7 @@ img.pic {
 }
 
 .contentBlock .titleWithLine{
-    margin-bottom: 10px;
+    margin-bottom: 12px;
 }
 
 .contentBlock .col-6{
@@ -649,6 +653,13 @@ body{
 }
 .square i{
     margin-bottom: 5px;
+}
+
+@media (max-width: 767px) {
+    .square{
+        width: 100%;
+        margin-bottom: 12px;
+    }
 }
 
 
