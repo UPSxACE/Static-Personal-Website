@@ -629,10 +629,33 @@ body{
 
 }
 
+.squareWrapper .row{
+    height: max-content;
+}
+
+.square{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #21252a;
+    width: 27.33333333%;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-size: 20px;
+}
+
+.square:not(:last-child){
+    margin-right: 9%;
+}
+.square i{
+    margin-bottom: 5px;
+}
+
+
 
 .ContentByRows{
-    background-color: saddlebrown;
-    height: 100%;
+background-color: saddlebrown;
+height: 100%;
 }
 
 
