@@ -67,9 +67,7 @@ div.pictureDivider.col-12{
 
 
 
-div.col-6.right{
-    padding-left:0px!important;
-}
+
 
 .contentHome .CentralText{
     padding-bottom: 25px
@@ -134,8 +132,16 @@ h1{
 
 
 html, body{
-     background-color: white!important;
+    background-color: white!important;
  }
+
+h1,h2,h3,h4, p, span{
+    color: #21252a;
+}
+
+.Footer p{
+    color: white;
+}
 
 .btn-dark{
     /*background-color:#69849b!important;*/
@@ -143,6 +149,7 @@ html, body{
     color:white!important;
     font-weight: 500!important;
     box-shadow: 1px 1px rgba(0,0,0,0.5) ;
+    background-color: #21252a!important;
 
 }
 
@@ -315,7 +322,10 @@ img.pic {
 }
 
 .contentBlock .col-6{
-    margin-bottom: 20px;
+    margin-bottom: 12px;
+}
+.contentBlock .col-4{
+    margin-bottom:12px;
 }
 
 
@@ -691,7 +701,7 @@ height: 100%;
     }
 
     .ContentByRows .col-6.left{
-         padding-right: 4%;
+         padding-right: 2%;
      }
 
     .ContentByRows .col-6.right{
@@ -903,4 +913,83 @@ height: 100%;
     justify-content: left;
 
 
+}
+
+.error-navigation-container, .error-navigation-inner{
+    height: 71px;
+    background-color: rgba(242,58,60,1)!important;
+}
+
+.form-line{
+    padding-top:3px!important;
+    padding-bottom:3px!important;
+    margin-top:3px!important;
+    margin-bottom:3px!important;
+    padding-left:0!important;
+    margin-left:0!important;
+    padding-right:0!important;
+    margin-right:0!important;
+}
+.jotform-form ul.form-section{
+    padding-left:0!important;
+    padding-right: 0!important;
+}
+
+form.jotform-form label{
+    display: flex;
+    justify-content: end;
+    padding:0;
+    margin:0;
+
+}
+
+.form-all{
+    margin:0!important;
+    background-color: transparent!important;
+    box-shadow: none!important;
+}
+
+.form-buttons-wrapper{
+    margin:0px!important;
+    padding:0px!important;
+    border:0!important;
+}
+
+.form-buttons-wrapper button{
+    margin:0px!important;
+    padding:0px!important;
+}
+
+.error-navigation-message{
+    color:white;
+}
+
+.submit-button{
+    border:0!important;
+    width: 100%!important;
+}
+
+.form-line-error {
+    background-color: transparent!important;
+}
+
+.map, .gmap_canvas{
+    display: flex;
+}
+
+
+
+.mapouter{
+    display: flex;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    flex-grow: 1;
+}
+
+.gmap_canvas{
+    flex-grow:1;
+}
+
+iframe{
+    flex-grow: 1;
 }
