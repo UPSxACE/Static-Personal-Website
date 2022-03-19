@@ -203,7 +203,8 @@ div.socialMediaIcons h1{
 .socialMediaIcons a{
     color:#21252a;
 }
-.socialMediaIcons a:hover{
+
+.socialMediaIcons a:hover, .socialMediaIcons a h1:hover{
     color: rgb(78, 113, 164);
 }
 
@@ -278,6 +279,8 @@ img.pic {
     }
 }
 
+
+
 @media only screen and (orientation: landscape) and (max-height: 475px){
     h1.display-1{
         font-size: 48px!important;
@@ -313,19 +316,37 @@ img.pic {
     }
 }
 
+@media (max-height: 400px){
+    h1.display-1{
+        font-size: calc(2rem + 0.75vh)!important;
+    }
+
+    .CentralText h4{
+        font-size: calc(0.75rem + 0.15vh)!important;
+    }
+
+    .contentHome .CentralText {
+        padding-bottom: 10px!important;
+    }
+
+    div.socialMediaIcons h1 {
+        padding-top: 10px;
+    }
+}
+
 .contentHome h1.display-1{
     margin-bottom: 0;
 }
 
 .contentBlock .titleWithLine{
-    margin-bottom: 12px;
+    margin-bottom: 24px;
 }
 
 .contentBlock .col-6{
-    margin-bottom: 12px;
+    margin-bottom: 36px;
 }
 .contentBlock .col-4{
-    margin-bottom:12px;
+    margin-bottom: 36px;
 }
 
 
@@ -915,6 +936,8 @@ height: 100%;
 
 }
 
+
+/* ----------------------------------------------CONTACT FORM-------------------------------------------------------- */
 .error-navigation-container, .error-navigation-inner{
     height: 71px;
     background-color: rgba(242,58,60,1)!important;
@@ -977,8 +1000,6 @@ form.jotform-form label{
     display: flex;
 }
 
-
-
 .mapouter{
     display: flex;
     margin-top: 6px;
@@ -992,4 +1013,8 @@ form.jotform-form label{
 
 iframe{
     flex-grow: 1;
+}
+
+div.error-navigation-container{
+    display: none;
 }
