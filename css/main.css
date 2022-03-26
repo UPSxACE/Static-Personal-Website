@@ -713,7 +713,7 @@ height: 100%;
 }
 
 
-.svg#circle1, .svg#circle2{
+.svg#circle1, .svg#circle2, .svg#circle3{
     display:flex;
     width: min-content;
     justify-content: center;
@@ -721,9 +721,13 @@ height: 100%;
     min-height: 200px;
 }
 
-.svg#circle1 h6, .svg#circle2 h6{
+.svg#circle1 h6, .svg#circle2 h6, .svg#circle3 h6{
     padding-top:7px;
     font-family: 'Montserrat', sans-serif;
+}
+
+.svg.progressBar{
+    line-height: 19px;
 }
 
 @media (min-width: 768px){
@@ -754,7 +758,7 @@ height: 100%;
         padding-left: 0%!important;
     }
 
-    .col-6.right .svg{
+    .col-6.right .svg.circle{
         min-height: 240px!important;
     }
 }
@@ -774,6 +778,33 @@ height: 100%;
     .col-6.left.breakPadding{
         padding-right:0;
     }
+}
+
+.marginFix, .ContentByRows .col-6.left{
+    padding-right: 2.5px!important;
+}
+
+.col-6.right.text-nowrap span:not(.titleLine), .col-6.left.text-nowrap span:not(.titleLine){
+    font-size:15px;
+}
+
+@media(max-width: 425px){
+    .col-6.right.text-nowrap span:not(.titleLine), .col-6.left.text-nowrap span:not(.titleLine){
+        font-size:13px;
+    }
+}
+
+@media(max-width: 385px){
+    .col-6.right.text-nowrap span:not(.titleLine), .col-6.left.text-nowrap span:not(.titleLine){
+        font-size:10px;
+    }
+}
+
+@media(max-width: 325px){
+    .col-6.right.text-nowrap span:not(.titleLine), .col-6.left.text-nowrap span:not(.titleLine){
+        white-space: normal;
+    }
+    //height
 }
 
 .outsideColumn{  /*fix to a weird random overflow problem that happened with this specific container`*/
@@ -799,6 +830,7 @@ height: 100%;
     display: inline-block;
 }
 
+
 .ContentByRows .spanList{
     display: flex;
     align-items: start;
@@ -807,6 +839,10 @@ height: 100%;
 .ContentByRows .spanList span.first{
     min-width: 25px;
     margin-left: 3.5px;
+}
+
+.ContentByRows .spanList  span.end{
+    margin-left: auto;
 }
 
 
