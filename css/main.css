@@ -624,7 +624,6 @@ body{
 /*Content Settings*/
 .MainContent .contentBlock{
     width: 100%; /*I will maybe regret this someday*/
-                 /*Later will make padding smaller and then disappear, on smaller screens*/
     padding-top: 60px;
     padding-bottom: 60px;
     padding-left: 50px;
@@ -761,11 +760,21 @@ height: 100%;
     .col-6.right .svg.circle{
         min-height: 240px!important;
     }
+
+
 }
 
 @media (max-width: 1494px){
     .breakMargin{
         margin-bottom: 0!important;
+    }
+
+    .MainContent .contentBlock{
+        width: 100%; /*I will maybe regret this someday*/
+        padding-top: 50px;
+        padding-bottom: 50px;
+        padding-left: 45px;
+        padding-right: 45px;
     }
 }
 
@@ -777,6 +786,16 @@ height: 100%;
 
     .col-6.left.breakPadding{
         padding-right:0;
+    }
+}
+
+@media (max-width: 768px) {
+    .MainContent .contentBlock{
+        width: 100%; /*I will maybe regret this someday*/
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 30px;
+        padding-right: 30px;
     }
 }
 
@@ -792,11 +811,27 @@ height: 100%;
     .col-6.right.text-nowrap span:not(.titleLine), .col-6.left.text-nowrap span:not(.titleLine){
         font-size:13px;
     }
+
+    .svg.progressBar{
+        line-height: 16px;
+    }
+
+    .svg.progressBar svg{
+        height: 17px!important;
+    }
 }
 
 @media(max-width: 385px){
     .col-6.right.text-nowrap span:not(.titleLine), .col-6.left.text-nowrap span:not(.titleLine){
         font-size:10px;
+    }
+
+    .svg.progressBar{
+        line-height: 12px;
+    }
+
+    .svg.progressBar svg{
+        height: 13px!important;
     }
 }
 
@@ -804,7 +839,11 @@ height: 100%;
     .col-6.right.text-nowrap span:not(.titleLine), .col-6.left.text-nowrap span:not(.titleLine){
         white-space: normal;
     }
-    //height
+
+}
+
+.knowledge{
+    margin-bottom:36px;
 }
 
 .outsideColumn{  /*fix to a weird random overflow problem that happened with this specific container`*/
