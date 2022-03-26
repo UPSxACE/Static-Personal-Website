@@ -713,7 +713,18 @@ height: 100%;
 }
 
 
+.svg#circle1, .svg#circle2{
+    display:flex;
+    width: min-content;
+    justify-content: center;
+    align-items:center;
+    min-height: 200px;
+}
 
+.svg#circle1 h6, .svg#circle2 h6{
+    padding-top:7px;
+    font-family: 'Montserrat', sans-serif;
+}
 
 @media (min-width: 768px){
     .ContentByRows .col-6{
@@ -741,6 +752,23 @@ height: 100%;
 
     .ContentByRows .col-6.right{
         padding-left: 0%!important;
+    }
+
+    .col-6.right .svg{
+        min-height: 240px!important;
+    }
+}
+
+@media (max-width: 1494px){
+    .breakMargin{
+        margin-bottom: 0!important;
+    }
+}
+
+@media (min-width: 1320px) and (max-width: 1494px){
+    .col-6.left, .col-6.right{
+        width: 100%;
+        max-width: 100%;
     }
 }
 
