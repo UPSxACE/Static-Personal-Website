@@ -770,7 +770,18 @@ height: 100%;
         width: 100%;
         max-width: 100%;
     }
+
+    .col-6.left.breakPadding{
+        padding-right:0;
+    }
 }
+
+.outsideColumn{  /*fix to a weird random overflow problem that happened with this specific container`*/
+    overflow-x: auto;
+}
+
+
+
 
 .ContentByRows .spaced-span1{ /*                      - Care, before it was: .ContentByRows .col-6.right .spaced-span1; but i changed it       */
     display: flex;
