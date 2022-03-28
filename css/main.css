@@ -1213,3 +1213,14 @@ div.error-navigation-container{
     margin:0;
     font-weight: bold;
 }
+
+.modal-dialog .modal-title{
+    font-weight: bold;
+}
+
+.modal-dialog img{
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    /*padding:50px;*/
+}
