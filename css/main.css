@@ -670,7 +670,7 @@ body{
 .square{
     display: flex;
     flex-direction: column;
-    border: 1px solid #21252a;
+    border: 2px solid #21252a;
     width: 31.33333333%;
     text-align: center;
     padding-top: 40px;
@@ -1131,4 +1131,85 @@ iframe{
 
 div.error-navigation-container{
     display: none;
+}
+
+/* ----------------------------------------------PROJECTS---------------------------------------------------------- */
+
+.tab-pane#projects, .contentProjects{
+    height: 100%;
+
+}
+
+.contentProjects .row.row1{
+    background-color: red;
+    height: 100%;
+    justify-content: center;
+    text-align: left;
+    align-items: center;
+
+
+}
+
+.contentProjects .col-12.outsideColumn{
+    display: flex;
+    background-color: saddlebrown;
+    justify-content: center;
+    height: 100%;/*                         ALTERAR MAIS TARDE*/
+
+
+}
+
+.contentProjects article{
+    display: flex;
+    width: 100%; /*                  ALTERAR MAIS TARDE */
+    background-color: bisque;
+    align-items: start;
+    justify-content: left;
+}
+
+.projectsGrid{
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+.projectsGrid .card{
+    /*border: 2px solid rgb(125, 119, 137);*/
+    /*background-color: #21252a;*/
+    /*border: 2px solid black;*/
+    filter: drop-shadow(0 4px 3px rgb(0 0 0 / 0.07)) drop-shadow(0 2px 2px rgb(0 0 0 / 0.06));
+    background-color: #ffffff;
+    /*border-radius: 0;*/
+}
+
+.projectsGrid .card-body .info span{
+    font-size: 13px!important;
+    margin-bottom: 6px;
+    color: #7d7789;
+}
+.projectsGrid .card-body .info span:first-child{
+    text-align: left;
+}
+.projectsGrid .card-body .info span:nth-child(2){
+    text-align: center;
+}
+.projectsGrid .card-body .info span:last-child{
+    text-align: right;
+}
+
+.projectsGrid .card-text{
+
+    /*color:white;*/
+    /*text-align: center;*/
+    /*text-align: justify;*/
+}
+
+.projectsGrid .card .card-img-top{
+    /*border-bottom: 2px solid rgb(125, 119, 137);*/
+
+}
+
+.card-title{
+    padding:8px 16px;
+    margin:0;
+    font-weight: bold;
 }
