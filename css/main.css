@@ -1270,12 +1270,16 @@ div.error-navigation-container{
 }
 
 .modal-description p{
-    font-family: Inter, sans-serif!important;
+    font-family: 'Montserrat', sans-serif!important; /*Inter, sans-serif!important;   Maybe change later? */
     font-size: 20px;
     font-weight: 500;
     color: #2c3345;
     padding-left: 20px;
     padding-right: 20px;
+}
+
+h5{
+    font-family: 'Montserrat', sans-serif!important; /* Maybe change later? */
 }
 
 
