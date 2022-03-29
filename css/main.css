@@ -1214,6 +1214,12 @@ div.error-navigation-container{
     font-weight: bold;
 }
 
+.card-img-top{ /* imagem deve ser na proporçao 155:240*/
+    max-height: 1550px;
+    max-width: 2400px;
+    object-fit: cover;
+}
+
 .modal-dialog .modal-title{
     font-weight: bold;
 }
@@ -1270,4 +1276,77 @@ div.error-navigation-container{
     color: #2c3345;
     padding-left: 20px;
     padding-right: 20px;
+}
+
+
+.cardWrapper:nth-child(3n-2){
+    justify-content: left;
+}
+.cardWrapper:nth-child(3n-1){
+    justify-content: center;
+}
+.cardWrapper:nth-child(3n){
+    justify-content: right;
+}
+
+.card-title{
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical!important;
+    text-overflow:ellipsis!important;
+    overflow: hidden!important;
+    line-height: 35px;
+}
+
+.card-text{
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    text-overflow:ellipsis!important;
+    overflow: hidden;
+}
+
+@media(max-width:769px){
+    .card-body{
+        height: 150px;
+    }
+
+    .cardWrapper{
+        width: 100%;
+        justify-content: center!important;
+    }
+
+    .cardWrapper .card{
+        width: 100%!important;
+    }
+}
+
+@media(min-width:769px) and (max-width: 1750px){
+    .cardWrapper .card{
+        width: 95%!important;
+    }
+
+    .cardWrapper:nth-child(2n-1){
+        width: 50%!important;
+        justify-content: left;
+    }
+
+    .cardWrapper:nth-child(2n){
+        width: 50%!important;
+        justify-content: right;
+    }
+}
+
+/* Some few responsiveness more */
+
+@media (min-width: 769px) and (max-width: 2791px) {
+    .card-title{
+        min-height: 86px;
+    }
+}
+
+@media (max-width: 300px) {
+    .projectsGrid .card-body .info span{
+        font-size:9px!important;
+    }
 }
