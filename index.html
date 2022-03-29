@@ -72,29 +72,32 @@
             data-bs-title="Quarry manager platform, built with Yii2 framework"
             data-bs-picture="https://i.imgur.com/YWEKHmA.png"
             data-bs-project-name="Quarry Manager"
+            data-bs-project-language="Portuguese"
+            data-bs-project-tech="Bootstrap 4, Html5, CSS3, JavaScript"
+            data-bs-project-status="In Progress"
+            data-bs-project-description="A platform for a quarry company, that consists in a website where people can register and order different kinds of stone, and a dashboard where the company employees can manage the stock and the online store."
     >Open modal for Project 1</button>
 
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-xl">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h2 class="modal-title text-center" id="exampleModalLabel">Title</h2>
+                    <h2 class="modal-title w-100 text-center" id="exampleModalLabel">Title</h2>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <img>
                 <div class="modal-body">
 
-                    <h5 class="project-name"><strong>Project Name: </strong></h5>
-                    <h5 class="project-language"><strong>Language: </strong></h5>
-                    <h5 class="project-status"><strong>Status: </strong></h5> <!--talvez substituir isto por texto do lado direito; ex: "60%"-->
-                    <h5 class="project-goal"><strong>Goal: </strong></h5>
+                    <h5 class="project-name text-center"><strong>Project Name: </strong></h5>
+                    <!--<h1 class="project-name text-center"><strong></strong></h1>-->
+                    <!--<hr>-->
+                    <h5 class="project-language text-center"><strong>Project Language: </strong></h5>
+                    <h5 class="project-tech text-center"><strong>Technologies Used: </strong></h5>
+                    <h5 class="project-status text-center"><strong>Status: </strong></h5> <!--talvez substituir isto por texto do lado direito; ex: "60%"-->
+                    <h5 class="project-description text-center"><strong>Description</strong></h5>
 
 
-                    <p id="parag1"></p>
-                    <p id="parag2"></p>
-                    <p id="parag3"></p>
-                    <p id="parag4"></p>
-                    <p id="parag5"></p>
+
 
                     <!--
                     <form>
@@ -109,10 +112,21 @@
                     </form>
                     -->
                 </div>
-                <div class="modal-footer">
+                <!--
+                <div class="modal-description">-->
+                    <!--
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                     <button type="button" class="btn btn-primary">Send message</button>
+                    -->
+                <!--
+                    <hr>
+                    <p id="parag1">While I develop this project I will be learning two new frameworks, and since it's focused only on the learning, the project is divided in three different stages:</p>
+                    <p id="parag2">1. A static version of the website, without any possible dynamic interaction will be created with Bootstrap.</p>
+                    <p id="parag3">2. A dynamic prototype will be created, utilizing the first framework I'm learning(Yii), now finally together with PHP and all the server-side factors.</p>
+                    <p id="parag4">3. The project will be recreated, now utilizing the React.JS library</p>
+                    <p id="parag5"></p>
                 </div>
+                -->
             </div>
         </div>
     </div>
@@ -992,6 +1006,26 @@
             var projectName = card.getAttribute('data-bs-project-name')
             textNodeNormalProjectName = document.createTextNode(projectName)
 
+            BoldProjectLanguage = document.createElement('strong')
+            BoldProjectLanguage.appendChild(document.createTextNode("Project Language: "))
+            var projectLanguage = card.getAttribute('data-bs-project-language')
+            textNodeNormalProjectLanguage = document.createTextNode(projectLanguage)
+
+            BoldProjectTech = document.createElement('strong')
+            BoldProjectTech.appendChild(document.createTextNode("Technologies Used: "))
+            var projectTech = card.getAttribute('data-bs-project-tech')
+            textNodeNormalProjectTech = document.createTextNode(projectTech)
+
+            BoldProjectStatus = document.createElement('strong')
+            BoldProjectStatus.appendChild(document.createTextNode("Status: "))
+            var projectStatus = card.getAttribute('data-bs-project-status')
+            textNodeNormalProjectStatus = document.createTextNode(projectStatus)
+
+            /*BoldProjectGoal = document.createElement('strong')
+            BoldProjectGoal.appendChild(document.createTextNode("Goal: "))*/
+            var projectDescription = card.getAttribute('data-bs-project-description')
+            textNodeNormalProjectDescription = document.createTextNode(projectDescription)
+
             // If necessary, you could initiate an AJAX request here
             // and then do the updating in a callback.
             //
@@ -999,19 +1033,37 @@
             var modalTitle = exampleModal.querySelector('.modal-title')
             var modalPicture = exampleModal.querySelector('#exampleModal img')
             var modalProjectName = exampleModal.querySelector('.project-name')
+            var modalProjectLanguage = exampleModal.querySelector('.project-language')
+            var modalProjectTech = exampleModal.querySelector('.project-tech')
+            var modalProjectStatus = exampleModal.querySelector('.project-status')
+            var modalProjectDescription = exampleModal.querySelector('.project-description')
 
 
 
 
             modalTitle.textContent = title
             modalPicture.setAttribute("src", image)
+
             modalProjectName.textContent = ""
             modalProjectName.appendChild(BoldProjectName)
             modalProjectName.appendChild(textNodeNormalProjectName)
 
-            /*modalProjectName.textContent += projectName;*/
+            modalProjectLanguage.textContent = ""
+            modalProjectLanguage.appendChild(BoldProjectLanguage)
+            modalProjectLanguage.appendChild(textNodeNormalProjectLanguage)
 
-            /* modalBodyInput.value = recipient */
+            modalProjectTech.textContent = ""
+            modalProjectTech.appendChild(BoldProjectTech)
+            modalProjectTech.appendChild(textNodeNormalProjectTech)
+
+            modalProjectStatus.textContent = ""
+            modalProjectStatus.appendChild(BoldProjectStatus)
+            modalProjectStatus.appendChild(textNodeNormalProjectStatus)
+
+            modalProjectDescription.textContent = ""
+            //modalProjectGoal.appendChild(BoldProjectGoal)
+            modalProjectDescription.appendChild(textNodeNormalProjectDescription)
+
         })
     </script>
 </body>

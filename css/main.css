@@ -1220,7 +1220,54 @@ div.error-navigation-container{
 
 .modal-dialog img{
     width: 100%;
-    height: 600px;
+    height: 569px;
     object-fit: cover;
     /*padding:50px;*/
+}
+
+@media (max-width: 576px) {
+    .modal-dialog img{
+        height:200px!important;
+    }
+}
+
+@media (min-width: 576px) {
+    .modal-dialog img{
+        height:237px!important;
+    }
+}
+
+@media (min-width: 992px){
+    .modal-dialog img{
+        height: 399px!important;
+    }
+}
+
+@media (min-width: 1200px){
+    .modal-dialog img{
+        height: 569px!important;
+    }
+}
+
+.modal.show{
+    display: flex!important;
+    align-content: center;
+}
+
+.modal-dialog{
+    margin-top:auto!important;
+    margin-bottom:auto!important;
+}
+
+.modal-dialog strong {
+    font-weight: 1000;
+}
+
+.modal-description p{
+    font-family: Inter, sans-serif!important;
+    font-size: 20px;
+    font-weight: 500;
+    color: #2c3345;
+    padding-left: 20px;
+    padding-right: 20px;
 }
