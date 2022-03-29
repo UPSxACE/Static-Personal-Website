@@ -693,6 +693,22 @@ body{
 }
 
 
+@media (min-height: 900px) and (orientation: landscape){
+    .square{
+        padding-top:60px!important;
+        padding-bottom: 60px!important;
+    }
+}
+
+
+@media (min-height: 960px) and (orientation: landscape){
+    .square{
+        padding-top:100px!important;
+        padding-bottom: 100px!important;
+    }
+}
+
+
 
 .ContentByRows{
 background-color: saddlebrown;
@@ -1360,4 +1376,5 @@ h5{
         font-size:9px!important;
     }
 }
+
 
