@@ -1295,7 +1295,7 @@ div.error-navigation-container{
     -webkit-box-orient: vertical!important;
     text-overflow:ellipsis!important;
     overflow: hidden!important;
-    line-height: 35px;
+    /*line-height: 35px;*/
 }
 
 .card-text{
@@ -1339,9 +1339,15 @@ div.error-navigation-container{
 
 /* Some few responsiveness more */
 
+@media (max-width: 769px){
+    .card-title{
+        max-height: 60px;
+    }
+}
+
 @media (min-width: 769px) and (max-width: 2791px) {
     .card-title{
-        min-height: 86px;
+        min-height: 60px!important;
     }
 }
 
@@ -1350,3 +1356,4 @@ div.error-navigation-container{
         font-size:9px!important;
     }
 }
+
