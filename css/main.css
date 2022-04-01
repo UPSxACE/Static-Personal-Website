@@ -135,7 +135,7 @@ html, body{
     background-color: white!important;
  }
 
-h1,h2,h3,h4,h5,h6, p, span{
+h1,h2,h3,h4,h5,h6, p, i, span{
     color: #21252a;
 }
 
@@ -663,6 +663,21 @@ body{
 
 }
 
+h1.titleWithLine.smallScreen{
+    display: none;
+}
+
+@media (max-width: 540px) {
+    h1.titleWithLine.bigScreen{
+        display: none;
+    }
+
+    h1.titleWithLine.smallScreen{
+        display: flex;
+    }
+}
+
+
 .squareWrapper .row{
     height: max-content;
 }
@@ -741,6 +756,19 @@ height: 100%;
     font-family: 'Montserrat', sans-serif;
 }
 
+.svg#circle4, .svg#circle5, .svg#circle6{
+    display:flex;
+    width: min-content;
+    justify-content: center;
+    align-items:center;
+    min-height: 200px;
+}
+
+.svg#circle4 h6, .svg#circle5 h6, .svg#circle6 h6{
+    padding-top:7px;
+    font-family: 'Montserrat', sans-serif;
+}
+
 .svg.progressBar{
     line-height: 19px;
 }
@@ -778,6 +806,27 @@ height: 100%;
     }
 
 
+}
+
+.languages#smallScreen1{
+    display:none!important;
+}
+
+@media (max-width: 440px){
+    .languages#bigScreen1{
+        display:none!important;
+    }
+
+    .languages#smallScreen1{
+        display:flex!important;
+    }
+
+}
+
+@media (max-width: 350px){
+    .svg#circle4 h6,.svg#circle5 h6, .svg#circle6 h6{
+        font-size: 12px;
+    }
 }
 
 @media (max-width: 1494px){
@@ -1377,5 +1426,3 @@ h5{
         font-size:9px!important;
     }
 }
-
-
