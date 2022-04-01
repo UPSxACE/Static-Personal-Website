@@ -135,7 +135,7 @@ html, body{
     background-color: white!important;
  }
 
-h1,h2,h3,h4, p, span{
+h1,h2,h3,h4,h5,h6, p, span{
     color: #21252a;
 }
 
@@ -1234,6 +1234,7 @@ div.error-navigation-container{
     max-height: 1550px;
     max-width: 2400px;
     object-fit: cover;
+    border-radius:0;
 }
 
 .modal-dialog .modal-title{
@@ -1361,13 +1362,13 @@ h5{
 
 @media (max-width: 769px){
     .card-title{
-        max-height: 60px;
+        max-height: 58px;
     }
 }
 
 @media (min-width: 769px) and (max-width: 2791px) {
     .card-title{
-        min-height: 60px!important;
+        height: 58px;
     }
 }
 
